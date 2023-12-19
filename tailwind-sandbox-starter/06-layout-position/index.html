@@ -9,27 +9,62 @@
   </head>
   <body>
     <!-- Positioning -->
-
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">Absolute Child</div>
+    </div>
     <!-- Top left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-blue-100">
+      <div class="absolute h-16 w-16 top-0 right-0 bg-blue-300"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative w-32 h-32 bg-green-100">
+      <div class="absolute w-16 h-16 left-0 bottom-0 bg-green-300"></div>
+    </div>
     <!-- Bottom right corner -->
-
+    <div class="relative w-32 h-32 bg-orange-100">
+      <div class="absolute h-16 w-16 bg-orange-300 bottom-0 right-0"></div>
+    </div>
     <!-- Span top edge -->
-
+    <div class="relative w-32 h-32 bg-green-100">
+      <div class="absolute bg-green-300 top-0 inset-x-0 h-16"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative w-32 h-32 bg-blue-100">
+      <div class="absolute w-16 left-0 inset-y-0 bg-blue-300"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative w-32 h-32 bg-green-100">
+      <div class="absolute w-16 right-0 inset-y-0 bg-green-300"></div>
+    </div>
     <!-- Span bottom edge -->
-
+    <div class="relative w-32 h-32 bg-orange-100">
+      <div class="absolute h-16 bottom-0 inset-x-0 bg-orange-300"></div>
+    </div>
     <!-- Display Classes -->
-
+    <div>
+      Lorem ipsum dolor sit amet consectetur
+       adipisicing elit. <span class='inline font-bold'>This is Inline</span> Dolorem modi obcaecati, sint consectetur vero quisquam veniam.
+        Laudantium dolorum quisquam, distinctio deleniti accusantium modi incidunt
+         beatae aspernatur architecto suscipit praesentium sed commodi? <span class="inline-block font-bold">This is inline block</span>
+          Ad culpa temporibus numquam reiciendis, nemo fugiat quaerat,
+           officia maiores tempore incidunt quia quam dolores praesentium magni dicta, 
+           quae architecto consequatur
+           <span class="block font-bold">This is block</span>
+       minus aperiam perferendis. Deserunt aliquam nam modi repellat.
+      </div>
     <!-- Z-Index -->
-
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 left-10 bg-blue-300">1</div>
+      <div class="absolute w-24 h-24 left-20 bg-blue-400">2</div>
+      <div class="absolute w-24 h-24 left-40 bg-blue-500">3</div>
+      <div class="absolute w-24 h-24 left-60 bg-blue-600">4</div>
+      <div class="absolute w-24 h-24 left-80 bg-blue-700">5</div>
+    </div>
     <!-- Floats -->
   </body>
 </html>
